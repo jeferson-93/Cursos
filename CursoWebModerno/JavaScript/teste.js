@@ -1,1 +1,1 @@
-console.log('Teste')
+console.log("Sentença de código")
