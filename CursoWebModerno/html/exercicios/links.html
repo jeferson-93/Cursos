@@ -1,0 +1,36 @@
+<h1>LINKS </h1>
+<!--URLs ABSOLUTAS-->
+<a id="inicio" href="https://www.google.com">Google 1</a><br>
+<a href="https://www.google.com" target="_blank">Google 2</a><br>
+<br>
+
+<!-- URLs RELATIVAS-->
+<a href="index.html">Voltar 1</a><br> <!-- busca o arquivo na mesma pasta -->
+<a href="/index.html">Voltar 2</a><br> <!-- Vai para a raiz -->
+<a href="../index.html">Voltar 3</a><br> <!-- Volta uma pasta -->
+<br>
+
+<a href="mailto:jeferson.herculano@outlook.com">Entre em contato</a>
+
+<!--NAVEGAÇÃO VIA ANCORA-->
+<a href="#noticia">Vá para a notícia</a> <!--irá levar a tela para a tag com este ID-->
+
+
+<div id="noticia" style="position: absolute; top:2000px;">
+    <h1>Notícia buemba!</h1>
+    <p>Não era nada</p>
+    <a href="#inicio">Volte para o início</a> <!--irá levar a tela para a tag com este ID-->
+</div>
+
+<!--
+    http://127.0.0.1:5500/index.html#noticia
+    a ancora não poderá ser submetida no backend.
+
+    href
+    target
+    _blank
+    /
+    ../ (voltar 1 pasta)
+    ../../ (voltar 2 pastas, e assim por diante)
+    mailto:
+-->
