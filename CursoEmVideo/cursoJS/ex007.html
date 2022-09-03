@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        #enviar{
+            color: white;
+            background-color: gray;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" id="txt1" maxlength="5"> +
+    <input type="number" id="txt2" maxlength="5">
+    <input type="submit" id="enviar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <script>
+        var botaoEnviar = window.document.querySelector('#enviar')
+        botaoEnviar.addEventListener('mouseenter', entrar)
+        botaoEnviar.addEventListener('mouseout', sair)
+
+        function somar(){
+        var txt1 = window.document.querySelector('#txt1')
+        var txt2 = window.document.querySelector('#txt2')
+        var n1 =  Number(txt1.value)
+        var n2 =  Number(txt2.value)
+        var soma = n1 + n2
+        var resultado = window.document.querySelector('#res')
+        resultado.innerHTML = `A soma de ${n1} + ${n2} é igual a ${soma}`
+        }
+
+        function entrar() {
+            botaoEnviar.style.background = "orange";
+            botaoEnviar.style.fontsize = "16pt";
+        }
+        function sair(){
+            botaoEnviar.style.background = 'gray'
+        }
+
+    </script>
+</body>
+</html>

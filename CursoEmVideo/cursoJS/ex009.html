@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        .block div, input{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+    <div class="block">
+        <div>Nacionalidade: <input type="text" class="nacionalidade"></div>
+        <input type="submit"><!--onclick="clicar()" é possivel inserir este evento na tag e não usar o listener-->
+    </div>
+    <div id="res"></div>
+
+    <script>
+        var botaoEnviar = document.querySelector('input[type=submit]')
+        botaoEnviar.addEventListener('click', clicar)
+
+        function clicar() {
+        var nacionalidade = window.document.querySelector('.nacionalidade')
+        var res = document.querySelector('#res')
+        if (nacionalidade.value.toLowerCase() == 'brasileiro') {
+            res.innerHTML = `<p>Brasileiros são bem vindos</p>`
+        } else {
+            res.innerHTML = `<p>${nacionalidade.value} Parece que temos um extrangeiro por aqui</p>`
+        }
+    }
+        
+        
+        
+
+    </script>
+</body>
+</html>

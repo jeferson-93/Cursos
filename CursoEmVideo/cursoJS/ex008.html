@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAB</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro <input type="number" name="txtVel" id="txtVel"> km
+    <input type="button" value="verificar" onclick="calcular()"> 
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var txtVelocidade = document.querySelector('input#txtVel')
+            var velocidade = Number(txtVelocidade.value)
+            var resultado = document.querySelector('div#res')
+            resultado.innerHTML = `<p>Você está dirigindo a ${velocidade} km/h</p>`
+            if (velocidade > 60) {
+                resultado.innerHTML += `<p>Você está <b>MULTADO</b> por excesso de velocidade</p>`
+            }
+            resultado.innerHTML += `<p>Dirija sempre com o uso do cinto de segurança</p>`
+
+        }
+    </script>
+</body>
+</html>

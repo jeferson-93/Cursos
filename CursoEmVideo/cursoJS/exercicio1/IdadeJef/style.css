@@ -1,0 +1,41 @@
+body {
+    background: rgba(15, 112, 182, 0.755);
+    font: normal 15pt arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    margin: auto;
+    border-radius: 10px;
+    width: 500px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.403);
+}
+
+div {
+    padding: 8px;
+}
+
+[name='sexo'] {
+    margin: 0px 8px 0px 20px;
+}
+
+#anoNascimento {
+    margin: 0px 8px 0px 20px;
+}
+
+#conteudo {
+    text-align: center;
+}
+
+footer {
+    padding: 15px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}

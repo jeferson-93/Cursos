@@ -1,0 +1,30 @@
+body {
+    background-color: darkblue
+}
+
+h1, footer {
+    text-align: center;
+    color: white;
+    font-family: arial;
+} 
+#horario {
+    padding: 2% 0%;
+    font: normal 15pt arial;
+    text-align: center;
+}
+
+#imagem {
+    padding: 2% 0%;
+    text-align: center;
+    border-radius: 50%;
+}
+
+section {
+    margin: 2% 35%;
+    border-radius: 5%;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+}
